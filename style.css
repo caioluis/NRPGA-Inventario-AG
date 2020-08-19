@@ -86,6 +86,7 @@ outrascontas {
 }
 
 .corpo {
+    height: 600px;
     max-height: 630px;
-    overflow: auto;
+    overflow-y: auto;
 }
