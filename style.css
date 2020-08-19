@@ -10,16 +10,17 @@
 }
 
 #dadosdoplayer {
-    background-color: #989898!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 10px;
+    background-color: #989898;
     color: white;
     font-family: rubik;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: 600;
-    text-align: left;
-    padding: 20px 30px;
+    text-align: center;
+    padding: 10px;
     height: 110px;
-}
-
-#inventario h1 {
-    margin: 0;
 }
