@@ -42,6 +42,7 @@ titulo {
 
 #navegacao button {
     width: 100%;
+    height: 30px;
     font-family: rubik;
     color: white;
     font-size: 15px;
@@ -52,6 +53,8 @@ titulo {
     border-radius: 0;
     background-color: #003597;
     padding: 0;
+    outline: none;
+    cursor: pointer;
 }
 
 item {
@@ -76,4 +79,9 @@ nomedoitem {
 
 outrascontas {
     margin-top: 6px;
+}
+
+.corpo {
+    max-height: 630px;
+    overflow: auto;
 }
