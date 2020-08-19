@@ -55,7 +55,7 @@ titulo {
 }
 
 item {
-    background-color: #ccc;
+    background-color: white;
     display: flex;
     flex-direction: column;
     margin: 0 10px -20px 10px;
@@ -65,4 +65,11 @@ item {
 
 item > * {
     margin: -38px 0 0 0;
+}
+
+nomedoitem {
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #003597;
 }
