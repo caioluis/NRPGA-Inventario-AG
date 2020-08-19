@@ -9,6 +9,10 @@
     margin-top: 20px;
 }
 
+#inventario div {
+    margin: -38px 0 0 0;
+}
+
 #dadosdoplayer {
     display: flex;
     flex-direction: column;
@@ -23,6 +27,7 @@
     text-align: center;
     padding: 10px;
     height: 70px;
+    margin: -19px 0 0 0;
 }
 
 titulo {
