@@ -57,6 +57,10 @@ titulo {
     cursor: pointer;
 }
 
+#navegacao button:hover {
+    background-color: #0144c0;
+}
+
 item {
     background-color: white;
     display: flex;
