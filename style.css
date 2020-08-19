@@ -57,4 +57,11 @@ titulo {
 item {
     background-color: #ccc;
     display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    padding: 18px;
+}
+
+item > * {
+    margin: -38px 0 0 0;
 }
