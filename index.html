@@ -1,13 +1,139 @@
 <link rel="stylesheet" href="style.css">
-<div id="inventario"><div id="dadosdoplayer"><titulo>@NomeUsuario - Inventário de AG</titulo><br>
+<div id="inventario"><br>
+<div id="dadosdoplayer"><br>
+<tituloinventario>@NomeUsuario - Inventário de AG</tituloinventario><br>
 <outrascontas>Contas secundárias: @NomeDA, @NomeTA</outrascontas><br>
-<div><agquantia>Quantia AG</agquantia> | <premium>Premium: Se Houver</premium></div></div><br>
-<div id="navegacao"><button type="button">Estoque</button><button type="button">Armas</button><button type="button">Pacotes</button><button type="button">Ativados</button><button type="button">VIP</button><button type="button">Doados</button></div>
-<div id="1" class="corpo">
-<item class="item">
-  <nomedoitem>Nome do Item</nomedoitem>
-  <quantidade>01</quantidade>
-  <datacompra>03/06/20</datacompra>
-  <linkcompra>[url="https://www.narutorpgakatsuki.net/t72525-mod-ag-senko-matsuda#554752"]Compra/Doação[/url]</linkcompra>
-</item>
-</div></div>
+<premiumeag><agquantia>Quantia AG</agquantia> | <premium>Premium: Se Houver</premium></premiumeag><br>
+</div><br>
+<br>
+<div id="navegacao"><button type="button" id="estoque">Estoque</button><button type="button" id="armas">Armas</button><button type="button" id="pacotes">Pacotes</button><button type="button" id="ativados">Ativados</button><button type="button" id="vip">VIP</button><button type="button" id="doados">Doados</button></div><br>
+<br>
+<div id="secao-estoque" class="corpo-inventario"><br><br>
+<item><br>
+ <nomedoitem>Nome do Item (01)</nomedoitem><br>
+ <datacompra>[b]Data da Compra/Recebimento:[/b] 03/06/20</datacompra><br>
+ <linkcompra>[url=https://linkaqui.com]Link Compra/Doação[/url]</linkcompra></item><br>
+<br>
+<item><br>
+ <nomedoitem>Nome do Item (01)</nomedoitem><br>
+ <datacompra>[b]Data da Compra/Recebimento:[/b] 03/06/20</datacompra><br>
+ <linkcompra>[url=https://linkaqui.com]Link Compra/Doação[/url]</linkcompra></item><br>
+<br>
+<item><br>
+ <nomedoitem>Nome do Item (01)</nomedoitem><br>
+ <datacompra>[b]Data da Compra/Recebimento:[/b] 03/06/20</datacompra><br>
+ <linkcompra>[url=https://linkaqui.com]Link Compra/Doação[/url]</linkcompra></item><br>
+<br>
+<item><br>
+ <nomedoitem>Nome do Item (01)</nomedoitem><br>
+ <datacompra>[b]Data da Compra/Recebimento:[/b] 03/06/20</datacompra><br>
+ <linkcompra>[url=https://linkaqui.com]Link Compra/Doação[/url]</linkcompra></item><br>
+<br>
+<item><br>
+ <nomedoitem>Nome do Item (01)</nomedoitem><br>
+ <datacompra>[b]Data da Compra/Recebimento:[/b] 03/06/20</datacompra><br>
+ <linkcompra>[url=https://linkaqui.com]Link Compra/Doação[/url]</linkcompra></item><br>
+<br>
+<item><br>
+ <nomedoitem>Nome do Item (01)</nomedoitem><br>
+ <datacompra>[b]Data da Compra/Recebimento:[/b] 03/06/20</datacompra><br>
+ <linkcompra>[url=https://linkaqui.com]Link Compra/Doação[/url]</linkcompra></item><br>
+</div><div id="secao-armas" class="corpo-inventario" style="display: none;"><br><br>
+<item><br>
+ <nomedoitem>Nome da Arma (01)</nomedoitem><br>
+ <datacompra>[b]Data da Compra/Recebimento:[/b] 03/06/20</datacompra><br>
+ <linkcompra>[url=https://linkaqui.com]Link Compra/Doação[/url]</linkcompra></item><br>
+<br>
+<item><br>
+ <nomedoitem>Nome da Arma (01)</nomedoitem><br>
+ <datacompra>[b]Data da Compra/Recebimento:[/b] 03/06/20</datacompra><br>
+ <linkcompra>[url=https://linkaqui.com]Link Compra/Doação[/url]</linkcompra></item><br>
+</div><div id="secao-pacotes" class="corpo-inventario" style="display: none;"><br><br>
+<item><br>
+ <nomedoitem>Nome do Pacote (01)</nomedoitem><br>
+ <datacompra>[b]Data da Compra/Recebimento:[/b] 03/06/20</datacompra><br>
+ <linkcompra>[url=https://linkaqui.com]Link Compra/Doação[/url]</linkcompra>
+ <itens>[list]
+ [*] Item 1
+ [*] Item 2
+ [/list]</itens></item><br>
+</div>
+</div>
+<script>
+for (var i = 0 ; i < document.getElementsByTagName('button').length; i++) {
+  document.getElementsByTagName('button')[i].addEventListener('click', function() {
+    for (var i = 0 ; i < document.getElementsByClassName('corpo-inventario').length; i++) {
+    document.getElementsByClassName('corpo-inventario')[i].style.display = 'none'
+  }
+  document.getElementById('secao-'+ event.srcElement.id).style.display = "block";
+}); 
+}
+</script>
+
+
+
+
+<div id="inventario">
+  <div id="dadosdoplayer">
+  <tituloinventario>@NomeUsuario - Inventário de AG</tituloinventario>
+  <outrascontas>Contas secundárias: @NomeDA, @NomeTA</outrascontas>
+  <premiumeag><agquantia>Quantia AG</agquantia> | <premium>Premium: Se Houver</premium></premiumeag>
+  </div>
+  
+  <div id="navegacao"><button type="button" id="estoque">Estoque</button><button type="button" id="armas">Armas</button><button type="button" id="pacotes">Pacotes</button><button type="button" id="ativados">Ativados</button><button type="button" id="vip">VIP</button><button type="button" id="doados">Doados</button></div>
+  
+  <div id="secao-estoque" class="corpo-inventario">
+  
+  <item>
+   <nomedoitem>Nome do Item (01)</nomedoitem>
+   <datacompra>[b]Data da Compra/Recebimento:[/b] 03/06/20</datacompra>
+   <linkcompra>[url=https://linkaqui.com]Link Compra/Doação[/url]</linkcompra></item>
+  
+  <item>
+   <nomedoitem>Nome do Item (01)</nomedoitem>
+   <datacompra>[b]Data da Compra/Recebimento:[/b] 03/06/20</datacompra>
+   <linkcompra>[url=https://linkaqui.com]Link Compra/Doação[/url]</linkcompra></item>
+  
+  <item>
+   <nomedoitem>Nome do Item (01)</nomedoitem>
+   <datacompra>[b]Data da Compra/Recebimento:[/b] 03/06/20</datacompra>
+   <linkcompra>[url=https://linkaqui.com]Link Compra/Doação[/url]</linkcompra></item>
+  
+  <item>
+   <nomedoitem>Nome do Item (01)</nomedoitem>
+   <datacompra>[b]Data da Compra/Recebimento:[/b] 03/06/20</datacompra>
+   <linkcompra>[url=https://linkaqui.com]Link Compra/Doação[/url]</linkcompra></item>
+  
+  <item>
+   <nomedoitem>Nome do Item (01)</nomedoitem>
+   <datacompra>[b]Data da Compra/Recebimento:[/b] 03/06/20</datacompra>
+   <linkcompra>[url=https://linkaqui.com]Link Compra/Doação[/url]</linkcompra></item>
+  
+  <item>
+   <nomedoitem>Nome do Item (01)</nomedoitem>
+   <datacompra>[b]Data da Compra/Recebimento:[/b] 03/06/20</datacompra>
+   <linkcompra>[url=https://linkaqui.com]Link Compra/Doação[/url]</linkcompra></item>
+  </div><div id="secao-armas" class="corpo-inventario" style="display: none;">
+  
+  <item>
+   <nomedoitem>Nome da Arma (01)</nomedoitem>
+   <datacompra>[b]Data da Compra/Recebimento:[/b] 03/06/20</datacompra>
+   <linkcompra>[url=https://linkaqui.com]Link Compra/Doação[/url]</linkcompra></item>
+  
+  <item>
+   <nomedoitem>Nome da Arma (01)</nomedoitem>
+   <datacompra>[b]Data da Compra/Recebimento:[/b] 03/06/20</datacompra>
+   <linkcompra>[url=https://linkaqui.com]Link Compra/Doação[/url]</linkcompra></item>
+  </div><div id="secao-pacotes" class="corpo-inventario" style="display: none;">
+  
+  <item>
+   <nomedoitem>Nome da Pacote (01)</nomedoitem>
+   <datacompra>[b]Data da Compra/Recebimento:[/b] 03/06/20</datacompra>
+   <linkcompra>[url=https://linkaqui.com]Link Compra/Doação[/url]</linkcompra>
+  [list]
+  [*]Item 1
+  [*]Item 2
+  [/list]
+  </item>
+  </div>
+  </div>
