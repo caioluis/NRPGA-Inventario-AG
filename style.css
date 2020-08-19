@@ -30,7 +30,7 @@
     margin: -19px 0 0 0!important;
 }
 
-titulo {
+tituloinventario {
     font-size: 25px;
 }
 
@@ -85,7 +85,7 @@ outrascontas {
     margin-top: 6px;
 }
 
-.corpo {
+.corpo-inventario {
     height: 620px;
     max-height: 620px;
     overflow-y: auto;
